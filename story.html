@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Daruma+Drop+One&display=swap" rel="stylesheet">
+    <title>Technica Project</title>
+</head>
+
+<body>
+    <div class="rectangle"></div>
+    <div class="rectangle3"></div>
+
+    <div class = "rectangle4" class="input-container">
+        <input type="text" id="textPromptInput" placeholder="Once Upon a Time...">
+    </div>
+    <button class = "rectangle6" id="generateTextBtn">make!</button>
+    
+    <div id="storyContainer">
+        <div class="rectangle5" id="storyBook">
+            <div id="placeholderBox">
+                <div id="messages">
+                    <!-- Messages go here -->
+                </div>
+            </div>
+        </div>
+        <button class="rectangle7" id="archiveButton">save!</button>
+        <button class="rectangle11" id="stopButton">
+            <img src="pause_button.png" alt="read" id="Logo"  style="width: 105px; height: 100;">
+        </button>
+        <button class="rectangle12" id="readButton">
+            <img src="play.png" alt="read" id="Logo"  style="width: 200px; height: 200;">
+        </button>
+
+    </div>
+
+    <p id = "menuBar">
+        <a href="story.html">Storytime</a>
+        <br>
+        <a href="archive.html">Archive</a>
+        <br>
+        <a href="about.html">About</a>
+    </p>
+
+    <!-- <button id="readButton"> -->
+       
+    <img class = "patchyImage" src="patchyPages.png" alt="Logo" id="Logo" style="width: 500px; height: 350px;">
+    
+    <script type = "module" src="main.js" defer></script>
+</body>
+</html>

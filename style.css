@@ -1,0 +1,323 @@
+/* MAIN PAGE */
+body {
+    margin: 0;
+    background-color: #fffef6;
+    transform: scale(0.5); 
+    transform-origin: top left; 
+}
+
+.rectangle {
+    width: 700px; 
+    height: 2000px;               
+    background-color: #3B78BD; 
+    position: fixed;
+    left: 20px;
+    top: 200px;
+    border-radius: 65px;
+}
+
+.rectangle::before {
+    content: "";
+    position: absolute;
+    top: 15px; 
+    left: 15px; 
+    right: 15px; 
+    bottom: 15px; 
+
+    border: 5px dashed rgba(255, 254, 246, 0.96);
+    border-radius: 65px; /* Adjust for inner border rounding */
+}
+
+#textPrompt{
+    position: fixed;
+    left: 800px;
+    top: 150;
+}
+
+
+#textPromptInput {
+    width: 2500px;
+    height: 140px;
+    background-color: #F3ACB8;
+    font-family: 'Chelsea Market';
+
+    font-size: 60px; 
+    box-sizing: border-box;
+
+    position: fixed;
+    left: 800px;
+    top: 200px;
+    text-align: center; 
+    
+    border-radius: 65px;
+    outline-offset: -30px;        
+}
+
+
+.rectangle4 {
+    width: 2500px;
+    height: 140px;          
+    background-color: #F3ACB8;
+    position: fixed;
+    left: 800px;
+    top: 200px;
+    border-radius: 65px;
+    z-index:100;
+
+}
+
+.rectangle4::before {
+    content: "";
+    position: absolute;
+    top: 15px; 
+    left: 15px; 
+    right: 15px; 
+    bottom: 15px; 
+    z-index:100;
+
+    border-radius: 65px;
+    border: 5px dashed #E65069;
+}
+
+#generateTextBtn {
+    width: 350px;
+    height: 135px;
+    flex-shrink: 0; 
+    background: #86ad79;
+    font-family: 'Chelsea Market';
+    color: #fffef6;
+
+    border-radius: 65px;
+    font-size: 48px; 
+    outline: none; 
+    box-sizing: border-box;
+
+    position: fixed;
+    left: 2850px;
+    top: 140px;
+    transform: rotate(-8deg);  
+    transform-origin: top left; 
+}
+
+#generateTextBtn:hover {
+    color: #476b38; /* Text color on hover */
+    border-color: #638A54; /* Change border color on hover */
+}
+
+.rectangle6 {
+    width: 1400px;
+    height: 140px;          
+    position: fixed;
+    left: 800px;
+    top: 200px;
+    border-radius: 65px;
+    z-index:100;
+
+}
+
+.rectangle6::before {
+    content: "";
+    position: absolute;
+    top: 15px; 
+    left: 15px; 
+    right: 15px; 
+    bottom: 15px; 
+    z-index:100;
+    border-radius: 65px;
+    border: 5px dashed #155b45;
+}
+
+#archiveButton {
+    width: 350px;
+    height: 135px;
+    flex-shrink: 0; 
+    background: #3B78BD;
+    font-family: 'Chelsea Market';
+    border-color: #2D5A8E;
+    color: #fffef6;
+
+    border-radius: 65px;
+    font-size: 48px; 
+    outline: none; 
+    box-sizing: border-box;
+
+    left: 2850px;
+    top: 1650px;
+}
+
+
+
+
+#archiveButton:hover {
+    color: #254a75; /* Text color on hover */
+    border-color: #2D5A8E; /* Change border color on hover */
+}
+
+.rectangle7 {
+    width: 1400px;
+    height: 140px;          
+    background-color: #2D5A8E;
+    position: fixed;
+    left: 800px;
+    top: 200px;
+    border-radius: 65px;
+    z-index:100;
+
+}
+
+.rectangle7::before {
+    content: "";
+    position: absolute;
+    top: 15px; 
+    left: 15px; 
+    right: 15px; 
+    bottom: 15px; 
+    z-index:100;
+
+    border-radius: 65px;
+    border: 5px dashed #155b45;
+}
+
+#readButton {
+    position: relative; /* This makes the button the reference for the pseudo-element */
+    left: 2340px; /* This seems very far to the left, consider adjusting if it's not intended */
+    top: 1750px;
+    z-index: 100; /* Increase this value to ensure it's above other elements */
+}
+
+#readButton::before {
+    content: "";
+    position: absolute;
+    top: 10px;  /* Adjusted to ensure it stays within the button */
+    left: 10px; /* Adjusted to ensure it stays within the button */
+    right: 10px; /* Adjusted to ensure it stays within the button */
+    bottom: 10px; /* Adjusted to ensure it stays within the button */
+    z-index: 101; /* Ensure it's above the button content if needed */
+}
+
+.rectangle11 {        
+    z-index:100;
+    position: absolute;
+    top: 1740px;
+    left: 2600px; 
+}
+
+
+#storyBook {
+    width: 2500px;
+    height: 2000px; /* Adjusted to the necessary height */
+    flex-shrink: 0;
+    border-radius: 65px;
+    background: #FFE883;
+    padding: 10px;
+    font-size: 10px;
+    outline: none;
+    box-sizing: border-box;
+    position: fixed;
+    left: 800px;
+    top: 360px;
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Disables horizontal scrolling */
+}
+
+
+.rectangle5 {
+    width: 1400px;
+    height: 140px;          
+    background-color: #F3ACB8;
+    position: fixed;
+    left: 800px;
+    top: 200px;
+    border-radius: 65px;
+    z-index:100;
+
+}
+
+.rectangle5::before {
+    content: "";
+    position: absolute;
+    top: 15px; 
+    left: 15px; 
+    right: 15px; 
+    bottom: 15px; 
+    z-index:100;
+
+    border-radius: 65px;
+    border: 5px dashed #ffd000;
+}
+
+#menuBar{
+    color: #FFFEF6;
+    position: fixed;
+    left: 280px;
+    top: 200px;
+
+    font-size: 80px;
+    font-family: 'Chelsea Market';
+    text-align: right;
+}
+
+#menuBar a {
+    text-decoration: none;
+    color: #FFFEF6;
+}
+
+#messages {
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+    font-size: 50px;
+    font-family: 'Darumadrop One', sans-serif;
+    height: 1300px; /* Fixed height */
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Disables horizontal scrolling */
+}
+
+.patchyImage {
+    margin-left: 0%;
+
+}
+
+
+.stopButton{
+    margin-left: 1750px;
+    margin-top: 1750px;
+    position:absolute ;
+
+    background:url(pause_button.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    right: 500px;
+
+
+}
+
+stopButton:active {
+     background:url(pause_button.png) no-repeat;
+}
+
+
+
+img {
+    margin-left: 0%;
+    width: 900px;
+}
+
+
+#Logo {
+    position: absolute;
+    top: 0px;  /* Distance from the top */
+    left: 70px;  /* Distance from the left */
+    height: auto;
+    padding-top: 0px;
+
+    margin-top: -100px;
+    transform: rotate(1.717deg);
+}
+
+#play{
+    width: 200px;
+    height:100px;
+    
+}

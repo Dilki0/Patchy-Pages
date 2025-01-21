@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Landing Page</title>
+<link rel="stylesheet" href="style.css"> 
+
+</head>
+<body id = "body2">
+
+    <img id="landing" src="landing.jpg">
+
+    <style>
+        #landing {
+            width: 100%;
+            height: 100%;
+            transform: scale(2); 
+            transform-origin: top left; 
+
+        }
+    </style>
+
+    <script>
+        document.getElementById("landing").addEventListener("click",  function () {
+            window.location.href = "story.html";
+        });
+    </script>
+
+</body>
+</html>
